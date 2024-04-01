@@ -1,0 +1,6 @@
+<form [formGroup]="uploadForm">
+    <input type="file" formControlName="file" (change)="uploadFile($event)">
+    <br>
+    <div *ngIf="errorMessage">{{ errorMessage }}</div>
+    <div *ngIf="successMessage">{{ successMessage }}</div>
+  </form>
